@@ -24,6 +24,7 @@ ul {
   --secondary-variant: #b70709;
   --tertiary: #11770e;
   --surface: #fffeff;
+  --surface-variant: #707070;
   --text: #050505;
   --accent: #f2d8a7;
   --accent-variant: #d2b068;
@@ -115,3 +116,49 @@ nav {
 }
 
 /* menu page styles */
+
+.menu {
+  margin: 9rem 3rem;
+}
+
+.menu__card {
+  width: 20rem;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.menu__card__img {
+  width: 12rem;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.menu__card--not-img {
+  background-color: var(--accent);
+  padding: 0.75rem 0 0.1rem 0;
+  border-radius: 20px;
+}
+
+.menu__card__desc {
+  margin: 0 3rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.menu__card__price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.price--dollar-sign {
+  font-family: 800;
+  font-size: 3rem;
+}
