@@ -100,9 +100,10 @@ nav {
 }
 
 .hero h1 {
+  text-align: center;
   color: var(--surface);
   position: absolute;
-  font-size: 50px;
+  font-size: 3rem;
   font-weight: 700;
   text-shadow: -3px 2px 4px rgba(0, 0, 0, .75);
 }
