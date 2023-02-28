@@ -214,3 +214,46 @@ body {
   color: var(--surface);
   background-color: var(--primary);
 }
+
+/* about page styles */
+
+.about {
+  margin: 9rem 8rem;
+  margin-bottom: 0;
+  display: grid;
+  grid-template-areas: 
+    "header img"
+    "desc img";
+  grid-template-rows: 1fr 4fr;
+  grid-template-columns: 2fr 1.5fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__header {
+  grid-area: header;
+}
+
+.about__header h1 {
+  font-size: 3rem;
+  color: var(--text);
+}
+
+.about__desc {
+  grid-area: desc;
+  font-size: 1.2rem;
+}
+
+.about__img {
+  align-self: center;
+  justify-self: center;
+  margin-left: 3.5rem;
+  grid-area: img;
+  max-width: calc(100% - 8rem);
+  border-radius: 24px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, .25);
+}
+
+.about__highlight {
+  color: var(--primary-variant);
+}
