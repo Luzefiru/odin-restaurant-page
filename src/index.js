@@ -1,10 +1,12 @@
 // /* page contents */
 import homePage from './page-home';
 import menuPage from './page-menu';
+import aboutPage from './page-about';
 
 const idContentMap = {
   home: homePage,
   menu: menuPage,
+  about: aboutPage,
 };
 
 /* navbar functionalities */
@@ -43,11 +45,7 @@ navButtons.forEach((e) => {
     e.classList.add('selected');
     currentNavPage = e;
     // loads the page contents based on id
-    switch (e.id.split('__')[1]) {
-      case 'home': loadPage(idContentMap[e.id.split('__')[1]]); break;
-      case 'menu': loadPage(idContentMap[e.id.split('__')[1]]); break;
-      default: alert('Failed to load page.');
-    }
+    loadPage(idContentMap[e.id.split('__')[1]]);
   });
 });
 
