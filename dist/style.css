@@ -207,6 +207,7 @@ body {
   font-weight: 500;
   height: 2.25rem;
   width: 8rem;
+  border-radius: 4px;
 }
 
 .card__btn:hover {
