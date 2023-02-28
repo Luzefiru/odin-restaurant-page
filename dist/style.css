@@ -31,7 +31,7 @@ header {
   grid-template-columns: 1fr 21fr 1.5fr;
   grid-auto-flow: column;
   background-color: var(--surface);
-  box-shadow: 0 4px 24px -4px rgba(0, 0, 0, .25);
+  box-shadow: 0 2px 12px -4px rgba(0, 0, 0, .25);
   padding: 0.25rem 2rem;
 }
 
@@ -47,11 +47,28 @@ nav {
   gap: 3rem
 }
 
-.nav__list__link:link {
+.nav__list__link:link,
+.nav__list__link:visited {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: var(--text);
   font-weight: 600;
   font-size: 1.25rem;
+}
+
+.nav__list__link.selected {
+  color: var(--primary);
+}
+
+.nav__list__link.selected:after {
+  content: '\A';
+  background-color: var(--primary);
+  width: 4rem;
+  height: 4px;
+  align-self: center;
+  position: absolute;
+  margin: 1.75rem;
 }
 
 .hero {
