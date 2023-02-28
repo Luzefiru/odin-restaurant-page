@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+:root {
+  --primary: #e25515;
+  --secondary: #f12c15;
+  --secondary-variant: #b70709;
+  --tertiary: #11770e;
+  --surface: #fffeff;
+  --accent: #f2d8a7;
+  --accent-variant: #d2b068;
+}
