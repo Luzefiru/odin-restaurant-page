@@ -105,7 +105,7 @@ nav {
   position: absolute;
   font-size: 3rem;
   font-weight: 700;
-  text-shadow: -3px 2px 4px rgba(0, 0, 0, .75);
+  text-shadow: -3px 2px 4px rgba(0, 0, 0, .5);
 }
 
 .hero__video {
