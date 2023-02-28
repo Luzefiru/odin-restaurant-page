@@ -87,7 +87,7 @@ nav {
   transition: all 0.1s ease;
 }
 
-/* beyond navbar styles */
+/* hero home page styles */
 
 .hero {
   display: flex;
@@ -113,3 +113,5 @@ nav {
   width: 100%;
   min-height: 100%;
 }
+
+/* menu page styles */
