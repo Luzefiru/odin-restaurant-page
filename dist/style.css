@@ -118,7 +118,7 @@ nav {
 /* menu page styles */
 
 body {
-  background-color: #f8490a1c;
+  background-color: #f8490a17;
 }
 
 .menu {
@@ -142,25 +142,51 @@ body {
 }
 
 .card--contents {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1rem 1.5rem 1rem;
+  display: grid;
+  grid-template-areas: 
+    "title title"
+    "desc desc"
+    "price btn";
+  grid-template-rows: 1fr 1.5fr;
+  height: 10rem;
 }
 
 .card__title {
+  grid-area: title;
   font-size: 1.3rem;
   font-weight: 600;
 }
 
 .card__desc {
+  align-self: start;
+  grid-area: desc;
   color: var(--text-variant);
   font-size: 0.9rem;
 }
 
 .card__price {
+  align-self: end;
+  grid-area: price;
   color: var(--primary);
   font-size: 1.75rem;
   font-weight: 700;
 }
 
 .card__btn {
-  
+  grid-area: btn;
+  justify-self: end;
+  align-self: center;
+  border: 1.5px var(--primary) solid;
+  background-color: var(--surface);
+  color: var(--primary);
+  font-size: 1.1rem;
+  font-weight: 500;
+  height: 2.25rem;
+  width: 8rem;
+}
+
+.card__btn:hover {
+  color: var(--surface);
+  background-color: var(--primary);
 }
