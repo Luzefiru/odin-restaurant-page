@@ -9,10 +9,9 @@
 }
 
 body, html {
+  /* NEED FOR HERO VIDEO: overflow: hidden; */
   height: 100%;
   width: 100%;
-  overflow: hidden;
-  position: relative;
 }
 
 ul {
@@ -32,6 +31,8 @@ ul {
 
 header {
   position: fixed;
+  top: 0;
+  left: 0;
   display: grid;
   grid-template-columns: 1fr 21fr 1.5fr;
   grid-auto-flow: column;
@@ -117,12 +118,17 @@ nav {
 
 /* menu page styles */
 
+#content {
+  padding-bottom: 4.5rem;
+}
+
 body {
   background-color: #f8490a17;
 }
 
 .menu {
   margin: 9rem 6rem;
+  margin-bottom: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
   gap: 3.5rem;
@@ -135,6 +141,13 @@ body {
   overflow: hidden; /* REMEMBER: this makes the image also get border-radius */
   background-color: var(--surface);
   box-shadow: 2px 0 8px rgba(0, 0, 0, .25);
+  transition: all 0.1s ease-in;
+}
+
+.menu__card:hover {
+  box-shadow: 2px 0 16px rgba(0, 0, 0, .25);
+  transform: scale(1.05);
+  transition: all 0.1s ease-out;
 }
 
 .card__image {
