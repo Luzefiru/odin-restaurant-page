@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelectorAll(".nav__list__link");let l=document.querySelector(".selected");e.forEach((e=>{console.log(e),e.addEventListener("click",(()=>{l.classList.remove("selected"),e.classList.add("selected"),l=e}))}))})();

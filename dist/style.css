@@ -55,20 +55,31 @@ nav {
   color: var(--text);
   font-weight: 600;
   font-size: 1.25rem;
+  transition: all 0.5s ease;
 }
 
 .nav__list__link.selected {
   color: var(--primary);
+  transform: scale(1.1);
+  transition: all 0.2s ease;
 }
 
-.nav__list__link.selected:after {
+.nav__list__link.selected::after {
+  display: inline-block;
   content: '\A';
   background-color: var(--primary);
-  width: 4rem;
+  width: 100%;
   height: 4px;
   align-self: center;
   position: absolute;
-  margin: 1.75rem;
+  margin-top: 1.75rem;
+  transform: scaleX(1);
+  transition: all 0.1s ease;
+}
+
+.nav__list__link.selected:hover::after {
+  transform: scaleX(0);
+  transition: all 0.1s ease;
 }
 
 .hero {
