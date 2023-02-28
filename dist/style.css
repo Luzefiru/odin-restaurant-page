@@ -9,7 +9,6 @@
 }
 
 body, html {
-  /* NEED FOR HERO VIDEO: overflow: hidden; */
   height: 100%;
   width: 100%;
 }
@@ -90,6 +89,14 @@ nav {
 }
 
 /* hero home page styles */
+
+body.hero-selected {
+  overflow: hidden;
+}
+
+#content.hero-selected {
+  padding-bottom: 0;
+}
 
 .hero {
   display: flex;
