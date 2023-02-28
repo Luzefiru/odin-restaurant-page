@@ -20,13 +20,12 @@ ul {
 }
 
 :root {
-  --primary: #e25515;
-  --secondary: #f12c15;
-  --secondary-variant: #b70709;
-  --tertiary: #11770e;
-  --surface: #fffeff;
-  --surface-variant: #707070;
-  --text: #050505;
+  --primary: #ff6600;
+  --primary-variant: #f84b0a;
+  --tertiary: #ff9600;
+  --surface: #f9f9f9;
+  --text: #181717;
+  --text-variant: #979797;
   --accent: #f2d8a7;
   --accent-variant: #d2b068;
 }
@@ -118,61 +117,50 @@ nav {
 
 /* menu page styles */
 
+body {
+  background-color: #f8490a1c;
+}
+
 .menu {
   margin: 9rem 6rem;
 }
 
 .menu__card {
-  width: 20rem;
-  height: min-content;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  width: 18rem;
+  height: 30rem;
+  border-radius: 12px;
+  overflow: hidden; /* REMEMBER: this makes the image also get border-radius */
+  background-color: var(--surface);
+  box-shadow: 2px 0 8px rgba(0, 0, 0, .25);
 }
 
-.menu__card__img {
-  width: 12rem;
-  margin-bottom: 1rem;
-  object-fit: cover;
-  transition: all 3s ease;
+.card__image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 20rem;
 }
 
-.menu__card__img:hover {
-  transform: rotate(720deg);
-  transition: all 15s ease;
+.card--contents {
+  padding: 0.5rem 1rem;
 }
 
-.menu__card--not-img {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: var(--accent);
-  padding: 0.75rem 0 0.1rem 0;
-  border-radius: 20px;
-  height: 10rem;
+.card__title {
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
-.menu__card__desc {
-  margin: 0 3rem;
-  font-size: 0.85rem;
-  font-weight: 400;
-  font-style: italic;
+.card__desc {
+  color: var(--text-variant);
+  font-size: 0.9rem;
 }
 
-.menu__card__price,
-.price--dollar-sign {
-  font-family: 'Tilt Warp';
+.card__price {
+  color: var(--primary);
+  font-size: 1.75rem;
+  font-weight: 700;
 }
 
-.menu__card__price {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7px;
-  font-size: 2.25rem;
-}
-
-.price--dollar-sign {
-  font-size: 2.75rem;
+.card__btn {
+  
 }
