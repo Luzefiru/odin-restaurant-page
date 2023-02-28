@@ -2,33 +2,36 @@
 import homePage from './page-home';
 import menuPage from './page-menu';
 
-/* navbar functionalities */
-const navButtons = document.querySelectorAll('.nav__list__link');
-let currentNavPage = document.querySelector('.selected');
-
-function navigateToHero() {
-  document.body.classList.add('hero-selected');
-  document.querySelector('#content').classList.add('hero-selected');
-}
-
-function navigateOutHero() {
-  document.body.classList.remove('hero-selected');
-  document.querySelector('#content').classList.remove('hero-selected');
-}
-
-function loadPage(page) {
-  const contentContainer = document.querySelector('#content');
-  contentContainer.innerHTML = page;
-}
-
 const idContentMap = {
   home: homePage,
   menu: menuPage,
 };
 
+/* navbar functionalities */
+const navButtons = document.querySelectorAll('.nav__list__link');
+let currentNavPage = document.querySelector('.selected');
+
+// adds specific CSS styles to the page in order for hero video to work
+function navigateToHero() {
+  document.body.classList.add('hero-selected');
+}
+
+// removes the hero class from the body
+function navigateOutHero() {
+  document.body.classList.remove('hero-selected');
+}
+
+// loads {page} into the #content container
+function loadPage(page) {
+  const contentContainer = document.querySelector('#content');
+  contentContainer.innerHTML = page;
+}
+
+// navbar button functionality
 navButtons.forEach((e) => {
   console.log(e);
   e.addEventListener('click', () => {
+    // use specific functions to make styling on home page
     if (e !== document.querySelector('#nav__home')) {
       navigateOutHero();
     } else if (e === document.querySelector('#nav__home')) {

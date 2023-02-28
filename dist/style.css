@@ -94,7 +94,7 @@ body.hero-selected {
   overflow: hidden;
 }
 
-#content.hero-selected {
+body.hero-selected #content {
   padding-bottom: 0;
 }
 
