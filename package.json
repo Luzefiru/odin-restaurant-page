@@ -1,0 +1,27 @@
+{
+  "name": "odin-restaurant-page",
+  "version": "1.0.0",
+  "description": "A restaurant page to practice dynamic DOM Manipulation to generate the HTML code for webpage contents.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Luzefiru/odin-restaurant-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Luzefiru/odin-restaurant-page/issues"
+  },
+  "homepage": "https://github.com/Luzefiru/odin-restaurant-page#readme",
+  "devDependencies": {
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
