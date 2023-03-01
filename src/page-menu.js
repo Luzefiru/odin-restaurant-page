@@ -1,6 +1,6 @@
 const menuPage = `<div class="menu">
 <div class="menu__card">
-  <div class="card__image" style="background-image: url(../res/menu/pepperoni.jpg);"></div>
+  <div class="card__image" style="background-image: url(./res/menu/pepperoni.jpg);"></div>
   <div class="card--contents">
     <div class="card__title">
       Pepperoni Pizza
@@ -17,7 +17,7 @@ const menuPage = `<div class="menu">
   </div>
 </div>
 <div class="menu__card">
-  <div class="card__image" style="background-image: url(../res/menu/olive.jpg);"></div>
+  <div class="card__image" style="background-image: url(./res/menu/olive.jpg);"></div>
   <div class="card--contents">
     <div class="card__title">
       Pizza Capricciosa
@@ -34,7 +34,7 @@ const menuPage = `<div class="menu">
   </div>
 </div>
 <div class="menu__card">
-  <div class="card__image" style="background-image: url(../res/menu/margherita.jpg);"></div>
+  <div class="card__image" style="background-image: url(./res/menu/margherita.jpg);"></div>
   <div class="card--contents">
     <div class="card__title">
       Margherita Pizza
@@ -51,7 +51,7 @@ const menuPage = `<div class="menu">
   </div>
 </div>
 <div class="menu__card">
-  <div class="card__image" style="background-image: url(../res/menu/seafood.jpg);"></div>
+  <div class="card__image" style="background-image: url(./res/menu/seafood.jpg);"></div>
   <div class="card--contents">
     <div class="card__title">
       Seafood Pizza
@@ -68,7 +68,7 @@ const menuPage = `<div class="menu">
   </div>
 </div>
 <div class="menu__card">
-  <div class="card__image" style="background-image: url(../res/menu/tomato-herbs.jpg);"></div>
+  <div class="card__image" style="background-image: url(./res/menu/tomato-herbs.jpg);"></div>
   <div class="card--contents">
     <div class="card__title">
       Vegetarian Pizza
@@ -85,7 +85,7 @@ const menuPage = `<div class="menu">
   </div>
 </div>
 <div class="menu__card">
-  <div class="card__image" style="background-image: url(../res/menu/bruschetta.jpg);"></div>
+  <div class="card__image" style="background-image: url(./res/menu/bruschetta.jpg);"></div>
   <div class="card--contents">
     <div class="card__title">
       Tomato Bruchetta
@@ -102,7 +102,7 @@ const menuPage = `<div class="menu">
   </div>
 </div>
 <div class="menu__card">
-  <div class="card__image" style="background-image: url(../res/menu/lasagna.jpg);"></div>
+  <div class="card__image" style="background-image: url(./res/menu/lasagna.jpg);"></div>
   <div class="card--contents">
     <div class="card__title">
       Classic Lasagna
@@ -119,7 +119,7 @@ const menuPage = `<div class="menu">
   </div>
 </div>
 <div class="menu__card">
-  <div class="card__image" style="background-image: url(../res/menu/carbonara.jpg);"></div>
+  <div class="card__image" style="background-image: url(./res/menu/carbonara.jpg);"></div>
   <div class="card--contents">
     <div class="card__title">
       Carbonara

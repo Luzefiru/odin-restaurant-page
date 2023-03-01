@@ -11,7 +11,7 @@ const aboutPage = `<div class="about">
   <br /><br />
   Thank you for choosing The Saucy Slice. We look forward to serving you!
 </div>
-<img class="about__img" src="../res/about.jpg" alt="An Employee of The Saucy Slice">
+<img class="about__img" src="./res/about.jpg" alt="An Employee of The Saucy Slice">
 </div>`;
 
 export default aboutPage;
