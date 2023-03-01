@@ -2,11 +2,13 @@
 import homePage from './page-home';
 import menuPage from './page-menu';
 import aboutPage from './page-about';
+import contactPage from './page-contact';
 
 const idContentMap = {
   home: homePage,
   menu: menuPage,
   about: aboutPage,
+  contact: contactPage,
 };
 
 /* navbar functionalities */
