@@ -261,3 +261,38 @@ body {
 .about__highlight {
   color: var(--primary-variant);
 }
+
+/* contact page styles */
+
+.contact {
+  position: relative;
+}
+
+.contact--list {
+  margin-top: 2.5rem;
+  margin-left: 10rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.details__heading {
+  font-size: 1.30rem;
+  font-weight: 600;
+  color: var(--primary-variant);
+}
+
+.details--header {
+  display: flex;
+  gap: 4px;
+}
+
+.details__icon {
+  width: 1.25rem;
+}
+
+.contact__details {
+  font-size: 1.1rem;
+}
